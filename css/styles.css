@@ -146,16 +146,58 @@ button, a { cursor: pointer; }
 .hero-stats b { display: block; font-size: 1.35rem; font-family: "Fraunces", serif; }
 .hero-stats span { font-size: 0.78rem; opacity: 0.82; }
 
-.relevancia { margin: 0 0 84px; }
+/* Relevancia */
+.relevancia { margin: 0 0 84px; padding-top: 40px; border-top: 1px solid var(--line); }
 .relevancia .kicker { margin-bottom: 8px; }
-.relevancia h2 { font-family: "Fraunces", Georgia, serif; font-size: clamp(1.8rem, 3.4vw, 2.6rem); margin: 0 0 20px; }
-.price-box { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; padding: 20px 24px; background: var(--rust); border-radius: 18px; box-shadow: var(--shadow); }
-.price { font-family: "Fraunces", Georgia, serif; font-size: 3.2rem; font-weight: 600; color: white; letter-spacing: 0.02em; }
-.price-label { font-size: 1rem; color: rgba(255,255,255,0.85); }
-.relevancia-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 24px; }
-.relevancia-item { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
-.relevancia-item .ri-label { display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--rust); margin-bottom: 6px; }
-.relevancia-item .ri-value { display: block; font-size: 1.2rem; font-weight: 700; color: var(--ink); }
+.relevancia h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  margin: 0 0 24px;
+}
+.price-box {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 28px 32px;
+  background: var(--rust);
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+}
+.price {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.02em;
+}
+.price-label { font-size: 1.1rem; color: rgba(255,255,255,0.85); }
+.relevancia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+.relevancia-item {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 24px 28px;
+}
+.relevancia-item .ri-label {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--rust);
+  margin-bottom: 10px;
+}
+.relevancia-item .ri-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--ink);
+}
 .relevancia-item:nth-child(2n) .ri-label { color: var(--rust-deep); }
 
 section { padding: 84px 0; }
