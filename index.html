@@ -2,272 +2,332 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Terreno en venta · Antiguas instalaciones del tren · Colima</title>
-  <meta name="description" content="Predio en Colima sobre las antiguas instalaciones del ferrocarril. Más de 20,400 m² en tres polígonos, con naves, patio y colindancia a vía férrea." />
+  <meta name="description" content="Predio de 20,422 m² en Colima sobre las antiguas instalaciones del ferrocarril: tres polígonos, naves de tabique, patio y frente a la vía férrea. $15,000,000 MXN a tratar." />
+  <meta name="theme-color" content="#1b2620" />
+  <link rel="canonical" href="https://victorcarrillodev.github.io/propiedad-en-venta/" />
+
+  <!-- Vista previa al compartir (WhatsApp, Facebook, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="og:title" content="Terreno en venta · 2.04 ha en Colima" />
+  <meta property="og:description" content="Antiguas instalaciones del tren: 20,422 m² en tres polígonos, naves de tabique y frente a la vía férrea. $15,000,000 MXN a tratar." />
+  <meta property="og:url" content="https://victorcarrillodev.github.io/propiedad-en-venta/" />
+  <meta property="og:image" content="https://victorcarrillodev.github.io/propiedad-en-venta/assets/web/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231b2620'/%3E%3Cpath d='M7 23V13l9-5 9 5v10' fill='none' stroke='%23d9733b' stroke-width='2.6' stroke-linejoin='round'/%3E%3Cpath d='M6 23h20' stroke='%23f4ede1' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <link rel="preload" as="image" href="assets/web/destacadas/destacada-1.webp"
+        imagesrcset="assets/web/destacadas/destacada-1-sm.webp 720w, assets/web/destacadas/destacada-1.webp 1195w"
+        imagesizes="100vw" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Manrope:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
-  <header class="nav">
-    <a class="brand" href="#inicio">
-      <strong>Predio Colima</strong>
-      <span>En venta</span>
-    </a>
-    <nav class="nav-links">
-      <a href="#predio">El predio</a>
-      <a href="#medidas">Medidas</a>
-      <a href="#colindancias">Colindancias</a>
-      <a href="#mapa-kml">Mapa</a>
-      <a href="#galeria">Galería</a>
-    </nav>
-    <a class="btn" href="#contacto">Quiero información</a>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12M6 11l6 6 6-6M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5 9 4l1.3 4-2 1.6a12 12 0 0 0 6.1 6.1l1.6-2 4 1.3.5 2.4c.1.7-.4 1.4-1.1 1.5A17 17 0 0 1 4.6 4.6c.1-.7.8-1.2 1.5-1.1Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19l-4 1Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <a class="skip" href="#resumen">Saltar al contenido</a>
+
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-text"><strong>Predio Ferromex</strong><small>Colima · En venta</small></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Secciones">
+        <a href="#resumen">El predio</a>
+        <a href="#medidas">Medidas</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#planos">Planos</a>
+        <a href="#galeria">Galería</a>
+        <a class="btn btn-sm nav-cta" href="#contacto">Solicitar información</a>
+      </nav>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+    </div>
   </header>
 
-  <section class="hero" id="inicio">
-    <img class="bg" src="assets/hero.jpg" alt="Naves de las antiguas instalaciones del tren en Colima" />
-    <div class="hero-copy">
-      <p class="kicker">Colima · El Tívoli · Vía férrea</p>
-      <h1>Un predio con historia industrial, en el corazón de Colima.</h1>
-      <p class="lead">Antiguas instalaciones del ferrocarril: tres polígonos juntos, naves existentes y un frente privilegiado a la vía. Listo para quien busca escala, ubicación y carácter.</p>
-      <div class="hero-actions">
-        <a class="btn" href="#mapa-kml">Ver en el mapa</a>
-        <a class="btn ghost" href="#galeria" style="color:#fff;border-color:rgba(255,255,255,.35)">Recorrer fotos</a>
+  <main>
+    <section class="hero" id="inicio">
+      <picture class="hero-bg">
+        <img src="assets/web/destacadas/destacada-1.webp"
+             srcset="assets/web/destacadas/destacada-1-sm.webp 720w, assets/web/destacadas/destacada-1.webp 1195w"
+             sizes="100vw" width="1195" height="896" fetchpriority="high" decoding="async"
+             alt="Nave de tabique de las antiguas instalaciones del tren en Colima" />
+      </picture>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow eyebrow-light">En venta · Colima, Colima</p>
+          <h1>Un predio con historia industrial en el corazón de Colima.</h1>
+          <p class="lead">Antiguas instalaciones del ferrocarril: tres polígonos contiguos, naves de tabique existentes y un frente privilegiado a la vía. Para quien busca escala, ubicación y carácter.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#galeria">Ver fotos <svg class="i"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost-light" href="#ubicacion"><svg class="i"><use href="#i-pin"/></svg> Ver en el mapa</a>
+          </div>
+        </div>
+        <aside class="price-card" aria-label="Precio y superficie">
+          <p class="price-card-label">Precio de venta</p>
+          <p class="price-card-value">$15,000,000 <span>MXN</span></p>
+          <p class="price-card-note">Precio a tratar</p>
+          <dl class="price-card-specs">
+            <div><dt>Superficie</dt><dd>20,422 m²</dd></div>
+            <div><dt>Hectáreas</dt><dd>2.04 ha</dd></div>
+            <div><dt>Polígonos</dt><dd>3</dd></div>
+            <div><dt>Precio / m²</dt><dd>≈ $734</dd></div>
+          </dl>
+          <a class="btn btn-block" href="#contacto">Agendar una visita</a>
+        </aside>
       </div>
-      <div class="hero-stats">
-        <div><b>20,422 m²</b><span>superficie total aprox.</span></div>
-        <div><b>2.04 ha</b><span>en tres polígonos</span></div>
-        <div><b>3 lotes</b><span>naves + patio + irregular</span></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="relevancia">
-    <div class="relevancia">
-      <p class="kicker" style="color:var(--rust)">Relevancia</p>
-      <h2>Precio y datos clave del terreno.</h2>
-      <div class="price-box">
-        <span class="price">$15,000,000</span>
-        <span class="price-label">pesos, a tratar</span>
+    <section class="stats-band" aria-label="Datos clave">
+      <div class="wrap stats">
+        <div><b>20,422 <small>m²</small></b><span>superficie total aprox.</span></div>
+        <div><b>≈ 161 <small>m</small></b><span>de frente a la vía férrea</span></div>
+        <div><b>3</b><span>polígonos contiguos</span></div>
+        <div><b>El Tívoli</b><span>Col. Riva Palacio, Colima</span></div>
       </div>
-      <div class="relevancia-grid">
-        <div class="relevancia-item">
-          <span class="ri-label">Superficie total</span>
-          <span class="ri-value">20,422 m²</span>
-        </div>
-        <div class="relevancia-item">
-          <span class="ri-label">Extensión</span>
-          <span class="ri-value">2.04 hectáreas</span>
-        </div>
-        <div class="relevancia-item">
-          <span class="ri-label">Polígonos</span>
-          <span class="ri-value">3 (naves, patio, irregular)</span>
-        </div>
-        <div class="relevancia-item">
-          <span class="ri-label">Frente a vía férrea</span>
-          <span class="ri-value">≈161 m (Polígono 1)</span>
-        </div>
-        <div class="relevancia-item">
-          <span class="ri-label">Colindancias</span>
-          <span class="ri-value">Estación, Parque Hidalgo, Hospital</span>
-        </div>
-        <div class="relevancia-item">
-          <span class="ri-label">Ubicación</span>
-          <span class="ri-value">El Tívoli · Col. Riva Palacio</span>
-        </div>
-        <div class="relevancia-item">
-          <span class="ri-label">Acceso</span>
-          <span class="ri-value">Ferromex, Carraleros, Progreso</span>
-        </div>
-        <div class="relevancia-item">
-          <span class="ri-label">Uso potencial</span>
-          <span class="ri-value">Bodega, recinto, hogar, patrimonio</span>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="predio">
-    <div class="wrap grid-2">
+    <section class="section" id="resumen">
+      <div class="wrap split">
+        <div class="reveal">
+          <p class="eyebrow">El predio</p>
+          <h2>Escala urbana con frente ferroviario.</h2>
+          <p class="section-lead">No es un lote aislado: son más de dos hectáreas dentro de la mancha urbana, con naves de tabique, patio amplio y colindancia directa a la vía férrea. Alrededor hay vivienda, parque, servicios de salud y avenidas principales.</p>
+          <p class="muted">El conjunto admite usos de bodega, recinto, desarrollo mixto o reconversión del patrimonio industrial, según el proyecto del comprador.</p>
+          <ul class="uses" aria-label="Usos potenciales">
+            <li>Bodega y logística</li>
+            <li>Recinto y eventos</li>
+            <li>Desarrollo mixto</li>
+            <li>Patrimonio industrial</li>
+          </ul>
+        </div>
+        <div class="mosaic reveal" id="destacadas" aria-label="Fotos destacadas"></div>
+      </div>
+
+      <div class="wrap">
+        <div class="spec-sheet reveal">
+          <h3>Ficha técnica</h3>
+          <dl class="specs">
+            <div><dt>Superficie total</dt><dd>20,422 m² <small>(2.04 ha)</small></dd></div>
+            <div><dt>Polígonos</dt><dd>3 · naves, lote compacto e irregular</dd></div>
+            <div><dt>Frente a vía férrea</dt><dd>≈ 161 m (Polígono 1)</dd></div>
+            <div><dt>Construcciones</dt><dd>Naves de tabique existentes</dd></div>
+            <div><dt>Zona</dt><dd>El Tívoli · Col. Riva Palacio</dd></div>
+            <div><dt>Calles de acceso</dt><dd>Ferromex, Carraleros y Progreso</dd></div>
+            <div><dt>Referencias</dt><dd>Estación del ferrocarril, Parque Hidalgo, Instituto Estatal de Cancerología</dd></div>
+            <div><dt>Coordenadas</dt><dd>19.2284° N, 103.7291° O</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="medidas">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Superficie y medidas</p>
+          <h2>Tres polígonos, un solo predio.</h2>
+          <p class="section-lead">Superficies y linderos calculados a partir del archivo KMZ de polígonos. Sirven para apreciar la escala; el levantamiento formal se confirma en escrituras y plano topográfico.</p>
+        </header>
+
+        <div class="medidas">
+          <figure class="siteplan reveal">
+            <svg id="siteplan" role="img" aria-label="Plano esquemático de los tres polígonos"></svg>
+            <figcaption>
+              <span>Plano esquemático · norte arriba</span>
+              <span class="scale" id="siteplan-scale"></span>
+            </figcaption>
+          </figure>
+
+          <div class="polis">
+            <article class="poli reveal" data-poli="1" style="--c:#e8c547">
+              <header><span class="poli-tag">Polígono 1</span><span class="poli-kind">Naves y patio</span></header>
+              <p class="poli-area">7,178 <small>m²</small></p>
+              <ul>
+                <li><span>Perímetro</span><b>≈ 433 m</b></li>
+                <li><span>Frente a vía férrea</span><b>≈ 161 m</b></li>
+                <li><span>Frente interior</span><b>≈ 131 m</b></li>
+                <li><span>Costado oriente</span><b>≈ 53 m</b></li>
+                <li><span>Escalones de lindero</span><b>16 · 22 · 50 m</b></li>
+              </ul>
+            </article>
+            <article class="poli reveal" data-poli="2" style="--c:#c0392b">
+              <header><span class="poli-tag">Polígono 2</span><span class="poli-kind">Lote compacto</span></header>
+              <p class="poli-area">940 <small>m²</small></p>
+              <ul>
+                <li><span>Perímetro</span><b>≈ 141 m</b></li>
+                <li><span>Lados</span><b>48 · 33 · 31 · 29 m</b></li>
+                <li><span>Ubicación</span><b>Suroeste, junto a Ferromex</b></li>
+              </ul>
+            </article>
+            <article class="poli reveal" data-poli="3" style="--c:#e67e22">
+              <header><span class="poli-tag">Polígono 3</span><span class="poli-kind">Terreno irregular</span></header>
+              <p class="poli-area">12,305 <small>m²</small></p>
+              <ul>
+                <li><span>Perímetro</span><b>≈ 517 m</b></li>
+                <li><span>Frente a naves / Ferromex</span><b>≈ 128 m</b></li>
+                <li><span>Forma</span><b>Irregular, 24 vértices</b></li>
+                <li><span>Colinda con</span><b>Carraleros y la vía</b></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+
+        <div class="share-bar reveal" aria-label="Proporción de cada polígono">
+          <div style="--w:35.1%;--c:#e8c547" title="Polígono 1 · 35%"></div>
+          <div style="--w:4.6%;--c:#c0392b" title="Polígono 2 · 5%"></div>
+          <div style="--w:60.3%;--c:#e67e22" title="Polígono 3 · 60%"></div>
+        </div>
+        <p class="note">Total del conjunto ≈ <strong>20,422 m² (2.04 ha)</strong>. Los colores corresponden a los del KMZ.</p>
+      </div>
+    </section>
+
+    <section class="section" id="ubicacion">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow">Ubicación</p>
+          <h2>A un lado de la estación, a minutos del centro.</h2>
+          <p class="section-lead">El predio se asienta entre la calle Ferromex, Carraleros y Progreso, en la zona El Tívoli / Col. Riva Palacio, ciudad de Colima. El mapa muestra el mismo trazo del archivo KMZ.</p>
+        </header>
+
+        <div class="map-card reveal">
+          <div class="map-toolbar">
+            <div class="segmented" role="group" aria-label="Tipo de mapa">
+              <button type="button" class="is-active" data-layer="sat">Satélite</button>
+              <button type="button" data-layer="osm">Calles</button>
+            </div>
+            <div class="map-focus" role="group" aria-label="Centrar mapa">
+              <button type="button" data-focus="all">Todo</button>
+              <button type="button" data-focus="1"><i style="--c:#e8c547"></i>P1</button>
+              <button type="button" data-focus="2"><i style="--c:#c0392b"></i>P2</button>
+              <button type="button" data-focus="3"><i style="--c:#e67e22"></i>P3</button>
+            </div>
+          </div>
+          <div id="mapa" class="map" aria-label="Mapa del predio con los polígonos del KMZ">
+            <div class="map-placeholder">
+              <svg class="i"><use href="#i-pin"/></svg>
+              <span>Cargando mapa…</span>
+            </div>
+          </div>
+          <div class="map-actions">
+            <a class="btn btn-outline" href="https://www.google.com/maps/search/?api=1&amp;query=19.2284,-103.7291" target="_blank" rel="noopener"><svg class="i"><use href="#i-pin"/></svg> Abrir en Google Maps</a>
+            <a class="btn btn-outline" href="assets/descargas/poligonos-colima.kmz" download="Poligonos-Colima.kmz"><svg class="i"><use href="#i-down"/></svg> Descargar KMZ (Google Earth)</a>
+          </div>
+        </div>
+
+        <div class="compass">
+          <article class="reveal"><span class="dir">N</span><h3>Norte / noreste</h3><p>Vía férrea Ferromex y la estación de ferrocarril de Colima. Frente largo, visible y difícil de replicar en la ciudad.</p></article>
+          <article class="reveal"><span class="dir">O</span><h3>Poniente</h3><p>Jardín El Tívoli, colonia Quinta El Tívoli y Parque Hidalgo. Zona arbolada, residencial y de esparcimiento.</p></article>
+          <article class="reveal"><span class="dir">S</span><h3>Sur</h3><p>Calle Ferromex, ALFER (cercas perimetrales) y la colonia Costeño. Acceso vehicular claro al predio.</p></article>
+          <article class="reveal"><span class="dir">E</span><h3>Oriente / sureste</h3><p>Calle Carraleros, Normalistas de México y el corredor de Av. Rey Colimán, con el Instituto Estatal de Cancerología a pocos minutos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="planos">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow-light">Planos</p>
+          <h2>Ubicación en imagen satelital.</h2>
+          <p class="section-lead">Siete láminas tabloide con la ubicación de los predios, de la escala de ciudad al detalle de cada polígono. Ábrelas en grande o descarga el PDF.</p>
+        </header>
+        <div class="planos" id="planos-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria">
+      <div class="wrap">
+        <header class="section-head section-head-row reveal">
+          <div>
+            <p class="eyebrow">Galería</p>
+            <h2>Recorre el predio foto a foto.</h2>
+            <p class="section-lead">Naves, patio, vía y calles de acceso. Toca cualquier foto para verla en pantalla completa; usa las flechas o desliza para avanzar.</p>
+          </div>
+          <button class="btn btn-outline" type="button" id="open-all"><svg class="i"><use href="#i-expand"/></svg> <span id="gallery-count">Ver todas</span></button>
+        </header>
+        <div class="gallery" id="gallery"></div>
+        <div class="gallery-more">
+          <button class="btn btn-outline" type="button" id="gallery-more" hidden><svg class="i"><use href="#i-grid"/></svg> Mostrar más fotos</button>
+        </div>
+
+        <h3 class="sub-title reveal">Videos del recorrido</h3>
+        <div class="videos" id="videos"></div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="wrap">
+        <div class="cta reveal">
+          <div>
+            <p class="eyebrow eyebrow-light">Siguiente paso</p>
+            <h2>Agenda una visita o solicita el expediente.</h2>
+            <p>Con gusto compartimos escrituras, medidas oficiales y condiciones de venta. Pregunta por disponibilidad para recorrer el predio.</p>
+          </div>
+          <div class="cta-actions" id="cta-actions">
+            <a class="btn btn-light" data-contacto="whatsapp" hidden><svg class="i"><use href="#i-chat"/></svg> WhatsApp</a>
+            <a class="btn btn-ghost-light" data-contacto="telefono" hidden><svg class="i"><use href="#i-phone"/></svg> <span></span></a>
+            <a class="btn btn-ghost-light" data-contacto="email"><svg class="i"><use href="#i-mail"/></svg> Escribir un correo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
       <div>
-        <p class="kicker" style="color:var(--rust)">Ubicación</p>
-        <h2>A un lado de la estación, a minutos del centro.</h2>
-        <p class="section-lead">El predio se asienta sobre las antiguas instalaciones del tren, entre la calle Ferromex, Carraleros y Progreso, en la zona El Tívoli / Col. Riva Palacio, ciudad de Colima.</p>
-        <dl class="facts">
-          <div>
-            <dt>Municipio y estado</dt>
-            <dd>Colima, Colima, México</dd>
-          </div>
-          <div>
-            <dt>Zona</dt>
-            <dd>El Tívoli · Colonia Riva Palacio · Jardín El Tívoli</dd>
-          </div>
-          <div>
-            <dt>Calles de acceso</dt>
-            <dd>Ferromex, Carraleros y Progreso</dd>
-          </div>
-          <div>
-            <dt>Referencias inmediatas</dt>
-            <dd>Estación de ferrocarril de Colima, Parque Hidalgo, Instituto Estatal de Cancerología, Av. Rey Colimán</dd>
-          </div>
-          <div>
-            <dt>Coordenadas aproximadas</dt>
-            <dd>19.2284° N, 103.7291° W</dd>
-          </div>
-        </dl>
+        <strong>Predio Ferromex · Colima</strong>
+        <p>Antiguas instalaciones del tren · Zona El Tívoli, Colima, México.</p>
       </div>
-      <div class="card">
-        <p class="kicker" style="color:var(--rust)">Por qué destaca</p>
-        <h3 style="font-family:Fraunces,serif;font-size:1.6rem;margin:.2rem 0 12px">Escala urbana con frente ferroviario</h3>
-        <p>No es un lote aislado: son más de dos hectáreas dentro de la mancha urbana, con naves de tabique, patio amplio y colindancia directa a la vía férrea. Alrededor hay vivienda, parque, servicios de salud y avenidas principales.</p>
-        <p>El conjunto admite usos de bodega, recinto, desarrollo mixto o reconversión del patrimonio industrial, según el proyecto del comprador.</p>
-      </div>
+      <p class="footer-note">Superficies aproximadas según trazo KMZ. La información es ilustrativa y no constituye oferta vinculante; las medidas oficiales se confirman en escrituras.</p>
     </div>
-  </section>
-
-  <section id="medidas" style="background:var(--paper-2)">
-    <div class="wrap">
-      <p class="kicker" style="color:var(--rust)">Superficie y medidas</p>
-      <h2>Tres polígonos, un solo predio.</h2>
-      <p class="section-lead">Las superficies y linderos se calcularon a partir del archivo KMZ de polígonos. Sirven para apreciar la escala; el levantamiento formal se confirma en escrituras y plano topográfico.</p>
-      <div class="polis">
-        <article class="poli">
-          <header>
-            <strong><span class="swatch" style="background:#e8c547"></span>Polígono 1</strong>
-            <span>Naves y patio</span>
-          </header>
-          <p class="area">7,178 m² <small>· 0.72 ha</small></p>
-          <ul>
-            <li>Perímetro ≈ 433 m</li>
-            <li>Frente a vía férrea ≈ 161 m</li>
-            <li>Costado oriente ≈ 53 m</li>
-            <li>Frente interior ≈ 131 m</li>
-            <li>Escalones: 16 · 22 · 50 m</li>
-          </ul>
-        </article>
-        <article class="poli">
-          <header>
-            <strong><span class="swatch" style="background:#c0392b"></span>Polígono 2</strong>
-            <span>Lote compacto</span>
-          </header>
-          <p class="area">940 m² <small>· 0.09 ha</small></p>
-          <ul>
-            <li>Perímetro ≈ 141 m</li>
-            <li>Lados ≈ 48 · 33 · 31 · 29 m</li>
-            <li>Pieza pequeña al suroeste, junto a Ferromex</li>
-          </ul>
-        </article>
-        <article class="poli">
-          <header>
-            <strong><span class="swatch" style="background:#e67e22"></span>Polígono 3</strong>
-            <span>Terreno irregular</span>
-          </header>
-          <p class="area">12,305 m² <small>· 1.23 ha</small></p>
-          <ul>
-            <li>Perímetro ≈ 517 m</li>
-            <li>Frente a naves / Ferromex ≈ 128 m</li>
-            <li>Forma irregular (24 vértices)</li>
-            <li>Abraza Carraleros y la vía</li>
-          </ul>
-        </article>
-      </div>
-      <p class="note">Total conjunto ≈ <strong>20,422 m² (2.04 hectáreas)</strong>. Colores iguales a los del KMZ: amarillo, rojo y naranja.</p>
-    </div>
-  </section>
-
-  <section id="colindancias">
-    <div class="wrap">
-      <p class="kicker" style="color:var(--rust)">Colindancias</p>
-      <h2>Lo que rodea al predio, a simple vista.</h2>
-      <p class="section-lead">Las colindancias que más pesan en valor: vía férrea, calles internas, parque y tejido urbano consolidado.</p>
-      <div class="compass">
-        <article>
-          <h3>Norte / noreste</h3>
-          <p>Vía férrea Ferromex y la estación de ferrocarril de Colima. Frente largo, visible y difícil de replicar en la ciudad.</p>
-        </article>
-        <article>
-          <h3>Poniente</h3>
-          <p>Jardín El Tívoli, colonia Quinta El Tívoli y Parque Hidalgo. Zona arbolada, residencial y de esparcimiento.</p>
-        </article>
-        <article>
-          <h3>Sur</h3>
-          <p>Calle Ferromex, ALFER (cercas perimetrales) y la colonia Costeño. Acceso vehicular claro al predio.</p>
-        </article>
-        <article>
-          <h3>Oriente / sureste</h3>
-          <p>Calle Carraleros, Normalistas de México y el corredor de Av. Rey Colimán, con el Instituto Estatal de Cancerología a pocos minutos.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="mapa-kml" style="background:var(--paper)">
-    <div class="wrap map-block">
-      <p class="kicker" style="color:var(--rust)">Mapa del predio</p>
-      <h2>Mira los polígonos sobre satélite.</h2>
-      <p class="section-lead">El mapa carga el mismo trazo del archivo KMZ. Puedes cambiar a mapa de calles, centrar cada polígono o descargar el KMZ para abrirlo en Google Earth.</p>
-      <div class="map-tools">
-        <div class="legend">
-          <span><span class="swatch" style="background:#e8c547"></span>Polígono 1 · naves</span>
-          <span><span class="swatch" style="background:#c0392b"></span>Polígono 2</span>
-          <span><span class="swatch" style="background:#e67e22"></span>Polígono 3</span>
-        </div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <button class="btn ghost" type="button" id="btn-sat">Satélite</button>
-          <button class="btn ghost" type="button" id="btn-osm">Calles</button>
-          <a class="btn" href="POLIGONOS COLIMA.kmz" download>Descargar KMZ</a>
-        </div>
-      </div>
-      <div id="mapa" aria-label="Mapa del predio con polígonos KML"></div>
-      <p class="note">Si el mapa no aparece al abrir el archivo directo, sirve la carpeta con un servidor local (por ejemplo <code>python -m http.server</code>).</p>
-      <div class="aereas">
-        <img class="wide" src="assets/aereas/vista-7.jpg" alt="Vista aérea de naves y polígonos sobre el predio" />
-        <img src="assets/aereas/vista-6.jpg" alt="Polígonos coloreados sobre imagen satelital" />
-        <img src="assets/aereas/vista-3.jpg" alt="Contexto urbano del predio en Colima" />
-      </div>
-    </div>
-  </section>
-
-  <section id="galeria">
-    <div class="wrap">
-      <p class="kicker" style="color:var(--rust)">Presentación</p>
-      <h2>Recorre el predio foto a foto.</h2>
-      <p class="section-lead">Todas las imágenes del directorio, en presentación a pantalla. Usa flechas, el teclado o las miniaturas.</p>
-      <div class="gallery-stage">
-        <img id="slide" alt="Foto del predio" />
-        <button class="g-nav prev" type="button" aria-label="Anterior">‹</button>
-        <button class="g-nav next" type="button" aria-label="Siguiente">›</button>
-        <div class="g-meta" id="g-meta"></div>
-      </div>
-      <div class="thumbs" id="thumbs"></div>
-      <h3 style="font-family:Fraunces,serif;margin:40px 0 8px">Videos del recorrido</h3>
-      <div class="videos" id="videos"></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="contacto" id="contacto">
-        <div>
-          <p class="kicker">Siguiente paso</p>
-          <h2>Agenda una visita o pide el expediente.</h2>
-          <p>Con gusto compartimos escrituras, medidas oficiales y condiciones de venta. El KMZ ya está en esta página para que el predio se aprecie en Google Earth o en el mapa.</p>
-        </div>
-        <a class="btn" href="mailto:?subject=Interés%20en%20predio%20Colima%20(antiguas%20instalaciones%20del%20tren)">Escribir ahora</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="wrap">Página de promoción del predio · Superficies aproximadas según trazo KMZ · Colima, México</div>
   </footer>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  <script src="js/predio.js"></script>
-  <script src="js/media.js"></script>
-  <script src="js/app.js"></script>
+  <a class="mobile-cta" href="#contacto">
+    <span><small>Precio a tratar</small><b>$15,000,000 MXN</b></span>
+    <span class="mobile-cta-btn">Informes</span>
+  </a>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Visor de fotos">
+    <div class="lb-top">
+      <span class="lb-count" id="lb-count"></span>
+      <span class="lb-caption" id="lb-caption"></span>
+      <a class="lb-btn lb-pdf" id="lb-pdf" hidden download><svg class="i"><use href="#i-down"/></svg><span>PDF</span></a>
+      <button class="lb-btn" type="button" data-lb="close" aria-label="Cerrar" autofocus><svg class="i"><use href="#i-close"/></svg></button>
+    </div>
+    <div class="lb-stage" id="lb-stage">
+      <img id="lb-img" alt="" decoding="async" />
+      <div class="lb-spinner" aria-hidden="true"></div>
+    </div>
+    <button class="lb-nav lb-prev" type="button" data-lb="prev" aria-label="Anterior"><svg class="i"><use href="#i-prev"/></svg></button>
+    <button class="lb-nav lb-next" type="button" data-lb="next" aria-label="Siguiente"><svg class="i"><use href="#i-next"/></svg></button>
+  </dialog>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/predio.js" defer></script>
+  <script src="js/media.js" defer></script>
+  <script src="js/app.js" defer></script>
 </body>
 </html>
