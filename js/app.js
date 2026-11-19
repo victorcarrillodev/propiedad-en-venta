@@ -488,7 +488,6 @@
   const mensaje = contacto.mensaje || "Hola, me interesa el predio en Colima.";
   const wa = $('[data-contacto="whatsapp"]');
   const tel = $('[data-contacto="telefono"]');
-  const mail = $('[data-contacto="email"]');
   if (digits(contacto.whatsapp)) {
     wa.href = `https://wa.me/${digits(contacto.whatsapp)}?text=${encodeURIComponent(mensaje)}`;
     wa.target = "_blank";
@@ -500,9 +499,6 @@
     tel.querySelector("span").textContent = contacto.telefono;
     tel.hidden = false;
   }
-  mail.href = `mailto:${contacto.email || ""}?subject=${encodeURIComponent(
-    "Interés en predio Colima (antiguas instalaciones del tren)"
-  )}&body=${encodeURIComponent(mensaje)}`;
 
   watchReveal();
 })();
